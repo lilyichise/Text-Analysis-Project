@@ -62,11 +62,6 @@ reduces the size of text data and improves accuracy of analysis
 """
 # after downloading stopwords from nltk as shown above, import stopwords from the subpackage 'nltk.corpus'.
 
-# get the stop words
-stop_words = set(stopwords.words('english'))
-
-# remove stop words from the tokens
-
 
 def remove_stop_words(text):
     """
