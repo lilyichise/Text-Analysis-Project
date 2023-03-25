@@ -1,10 +1,12 @@
 # Part 1 - Using a Data Source
 # Newspaper Articles
 
+from newspaper import Article
 from nltk.corpus import stopwords
 from collections import Counter
 import nltk
-from newspaper import Article
+nltk.download('punkt')
+
 
 # get the URL
 url = 'https://www.nytimes.com/2023/03/21/technology/google-bard-chatbot.html'
@@ -122,8 +124,21 @@ def remove_stop_words(text):
     return filtered_tokens
 
 
-# assign the called function to a variable name so that the variable can be called for future use without having to type out the function
-clean_tokens = remove_stop_words(text)
+def get_top_words(text, num_words=10):
+    # assign the called function to a variable name so that the variable can be called for future use without having to type out the function
+    # like in the 'word_freq' variable below
+    clean_token = remove_stop_words(text)
+
+    # get the word frequencies
+    word_freq = Counter(clean_token)
+
+    # get the 10 most common words
+    # .most_common() is a built-in function in 'collections' module; the returned list is sorted from most frequent to least frequent
+    top_words = word_freq.most_common(10)
+
+    # print the top 10 words
+    for word, freq in top_words:
+        print(f"{word}: {freq}")
 
 
-# get the word frequencies
+print(get_top_words(text))
