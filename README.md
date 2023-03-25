@@ -2,13 +2,13 @@
  
 Please read the [instructions](instructions.md).  
 
-# 1. Project Overview (~1 paragraph)
+# 1. Project Overview (~1 paragraph)  
 I used the data source Newspaper3k to scrape and curate news articles.    
 The techniques I used to process or analyze them include using tools in the natural language toolkit as well as the Collections module for more efficient ways of using lists, dictionaries, sets, and tuples.  
 I simply hoped to create functioning code and I hope to learn more techniques like the nltk; I also hope to be able to practice the techniques I already know and learn to implement them in more efficient ways in terms of formatting and conciseness.  
   
 
-# 2. Implementation (~1-2 paragraphs + screenshots)
+# 2. Implementation (~1-2 paragraphs + screenshots)  
 The goal for the code was to take a news article and return the top most frequent words after cleaning up the text file.
 
 Major components in sequential order:  
@@ -42,9 +42,12 @@ As for ChatGPT, it helped a lot in not only making my code more concise as with 
 ![Alt text](../../../../Desktop/Screen%20Shot%202023-03-24%20at%2011.04.57%20PM.png)  
 
 
-# 3. Results (~2-3 paragraphs + figures/examples)
-If you did some text analysis, what interesting things did you find? Graphs or other visualizations may be very useful here for showing your results.
-If you created a program that does something interesting (e.g. a Markov text synthesizer), be sure to provide a few interesting examples of the program's output.
+# 3. Results (~2-3 paragraphs + figures/examples)  
+Something interesting I found while doing text analysis was the Collections module.  
+I didn't know there were more efficient ways of using dictionaries, lists, tuples, and sets.  
+One more efficient technique that I specifically learned from the Collections module is the Counter() technique. It saves space and time bc otherwise, I would've made a for loop with a counter.  
+For the future, I am interested in learning more techniques within the Collections module.
+![Alt text](../../../../Desktop/Screen%20Shot%202023-03-25%20at%2012.21.54%20AM.png)
 
 
 # 4 Reflection (~1-2 paragraphs)
