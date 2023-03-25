@@ -5,6 +5,9 @@ Please read the [instructions](instructions.md).
 # 1. Project Overview (~1 paragraph)
 What data source(s) did you use? What technique(s) did you use to process or analyze them? What did you hope to create or learn through this project?
 
+I used the data source Newspaper3k to scrape and curate news articles.  
+The techniques I used to process or analyze them include  
+I hoped to create and I hope to learn .
 
 # 2. Implementation (~1-2 paragraphs + screenshots)
 Describe your implementation at a system architecture level. You should NOT walk through your code line by line, or explain every function (we can get that from your docstrings). Instead, talk about the major components, algorithms, data structures and how they fit together. You should also discuss at least one design decision where you had to choose between multiple alternatives, and explain why you made the choice. Use screenshots to describe how you used ChatGPT to help you or learn new things.
