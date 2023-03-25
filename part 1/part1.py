@@ -107,12 +107,23 @@ def remove_stop_words(text):
                 filtered_tokens.append(word)
 
     Breaking down List Comprehension wording:
-        - 
+        [word for word in tokens if word.lower() not in stop_words]
+    - 'for' keyword loops over iterable objects and generates a new list containing only words that satisfy the condition of not being in the stop words list
+    - the first 'word' before 'for' creates a new list called 'filtered_tokens', which will contain only the words from 'text' that pass the condition 'word.lower() not in stop_words'
+    - name each of these words that satisfy the condition as 'word' as directed by the second 'word' in the list comprehension
+        - the second 'word' after 'for' is a placeholder variable that takes on each value in the 'tokens' list as the loop iterates through it
+    
+    - both 'word's refer to the same thing, but don't have to be called the same name bc they just happen to refer to the same element in the list as separate expressions (Idk if 'expressions' is the right terminology)
+    - they can be called any variable name bc they are placeholders
     """
     filtered_tokens = [
         word for word in tokens if word.lower() not in stop_words]
 
     return filtered_tokens
+
+
+# assign the called function to a variable name so that the variable can be called for future use without having to type out the function
+clean_tokens = remove_stop_words(text)
 
 
 # get the word frequencies
